@@ -93,6 +93,7 @@ function FormSplitBill() {
         <option>You</option>
         <option>Clark</option>
       </select>
+      <Button>Split bill</Button>
     </form>
   );
 }
