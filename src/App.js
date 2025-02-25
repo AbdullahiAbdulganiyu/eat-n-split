@@ -87,7 +87,7 @@ function FormSplitBill() {
       <input type="number" />
       <label>🕴️Your expense</label>
       <input type="number" />
-      <label>🧑‍🤝‍🧑X's expense</label> <input type="number" />
+      <label>🧑‍🤝‍🧑X's expense</label> <input type="number" disabled />
       <label>🤑Who is paying the Bill</label>
       <select>
         <option value="user">You</option>
