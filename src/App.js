@@ -32,7 +32,9 @@ export default function App() {
         <FreindList />
 
         {showAddFriend && <FormAddFriend />}
-        <Button onClick={handleShowForm}>Add Friend</Button>
+        <Button onClick={handleShowForm}>
+          {showAddFriend ? "Close" : "Add Friend"}
+        </Button>
       </div>
       <FormSplitBill />
     </div>
