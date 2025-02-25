@@ -63,7 +63,7 @@ function Friend({ friend }) {
 }
 
 function Button({ children }) {
-  <button className="button">{children}</button>;
+  return <button className="button">{children}</button>;
 }
 function FormAddFriend() {
   return (
