@@ -27,7 +27,8 @@ export default function App() {
     <div className="app">
       <div className="sidebar">
         <FreindList />
-        <FormAddFriend />
+
+        {showAddFriend && <FormAddFriend />}
         <Button>Add Friend</Button>
       </div>
       <FormSplitBill />
