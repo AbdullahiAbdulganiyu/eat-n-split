@@ -39,3 +39,7 @@ function FreindList() {
     </ul>
   );
 }
+
+function Friend({ friend }) {
+  return <li>{friend.name}</li>;
+}
