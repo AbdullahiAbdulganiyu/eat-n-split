@@ -151,11 +151,11 @@ function FormSplitBill({ selectedFriend }) {
     <form className="form-split-bill">
       <h2>Split a bill with {selectedFriend.name} </h2>
       <label>💰Bill value</label>
-      <input type="number" />
+      <input type="text" />
       <label>🕴️Your expense</label>
-      <input type="number" />
+      <input type="text" />
       <label>🧑‍🤝‍🧑{selectedFriend.name}'s expense</label>{" "}
-      <input type="number" disabled />
+      <input type="text" disabled />
       <label>🤑Who is paying the Bill</label>
       <select>
         <option value="user">You</option>
