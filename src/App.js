@@ -27,6 +27,7 @@ export default function App() {
         <FormAddFriend />
         <Button>Add Friend</Button>
       </div>
+      <FormSplitBill />
     </div>
   );
 }
