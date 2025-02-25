@@ -25,6 +25,7 @@ export default function App() {
       <div className="sidebar">
         <FreindList />
         <FormAddFriend />
+        <Button>Add Friend</Button>
       </div>
     </div>
   );
