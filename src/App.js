@@ -46,7 +46,11 @@ export default function App() {
   return (
     <div className="app">
       <div className="sidebar">
-        <FreindList friends={friends} onSelection={handleSelection} />
+        <FreindList
+          friends={friends}
+          selectedFriend={selectedFriend}
+          onSelection={handleSelection}
+        />
 
         {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
         <Button onClick={handleShowForm}>
@@ -59,17 +63,22 @@ export default function App() {
   );
 }
 
-function FreindList({ friends, onSelection }) {
+function FreindList({ friends, onSelection, selectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (
-        <Friend friend={friend} onSelection={onSelection} key={friend.id} />
+        <Friend
+          friend={friend}
+          selectedFriend={selectedFriend}
+          onSelection={onSelection}
+          key={friend.id}
+        />
       ))}
     </ul>
   );
 }
 
-function Friend({ friend, onSelection }) {
+function Friend({ friend, onSelection, selectedFriend }) {
   return (
     <li>
       <img src={friend.image} alt={friend.name} />
