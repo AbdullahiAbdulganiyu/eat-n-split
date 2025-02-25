@@ -22,3 +22,7 @@ const initialFriends = [
 export default function App() {
   return <div>Hello React</div>;
 }
+
+function FreindList() {
+  return <ul>List</ul>;
+}
