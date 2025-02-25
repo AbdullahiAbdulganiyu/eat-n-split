@@ -72,6 +72,7 @@ function FormAddFriend() {
       <input type="text" placeholder="Enter friend name" />
       <label>📸Image Url</label>{" "}
       <input type="text" placeholder="https://i.pravatar.cc/48?u=118836" />
+      <Button>Add</Button>
     </form>
   );
 }
