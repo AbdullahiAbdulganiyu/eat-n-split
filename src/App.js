@@ -85,10 +85,9 @@ function FormAddFriend() {
   const [image, setImage] = useState("");
   return (
     <form className="form-add-friend">
-      <label>👭Friend Name:</label>
-      <input type="text" placeholder="Enter friend name" />
-      <label>📸Image Url</label>{" "}
-      <input type="text" placeholder="https://i.pravatar.cc/48?u=118836" />
+      <label>🧑‍🤝‍🧑Friend Name</label>
+      <input type="text" />
+      <label>📸Image Url</label> <input type="text" />
       <Button>Add</Button>
     </form>
   );
