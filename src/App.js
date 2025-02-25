@@ -36,6 +36,7 @@ function FreindList() {
       {friends.map((friend) => (
         <Friend friend={friend} key={friend.id} />
       ))}
+      <FormAddFriend />
     </ul>
   );
 }
@@ -58,5 +59,16 @@ function Friend({ friend }) {
       {friend.balance === 0 && <p>You and {friend.name} are even</p>}
       <button className="button">Select</button>
     </li>
+  );
+}
+
+function FormAddFriend() {
+  return (
+    <form className="form-add-friend">
+      <label>👭Friend Name:</label>
+      <input type="text" placeholder="Enter friend name" />
+      <label>📸Image Url</label>{" "}
+      <input type="text" placeholder="https://i.pravatar.cc/48?u=118836" />
+    </form>
   );
 }
