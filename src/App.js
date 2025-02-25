@@ -29,7 +29,7 @@ export default function App() {
         <FreindList />
 
         {showAddFriend && <FormAddFriend />}
-        <Button>Add Friend</Button>
+        <Button onClick={handleShowForm}>Add Friend</Button>
       </div>
       <FormSplitBill />
     </div>
@@ -68,8 +68,12 @@ function Friend({ friend }) {
   );
 }
 
-function Button({ children }) {
-  return <button className="button">{children}</button>;
+function Button({ children, onClick }) {
+  return (
+    <button className="button" onClick={onClick}>
+      {children}
+    </button>
+  );
 }
 function FormAddFriend() {
   return (
