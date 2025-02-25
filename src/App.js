@@ -85,6 +85,12 @@ function FormAddFriend() {
   const [image, setImage] = useState("https://i.pravatar.cc/48");
   function handleSubmit(e) {
     e.preventDefault();
+    const newFriend = {
+      name,
+      image,
+      balance: 0,
+      id,
+    };
   }
   return (
     <form className="form-add-friend" onSubmit={handleSubmit}>
