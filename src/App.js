@@ -94,6 +94,7 @@ function FormAddFriend() {
       balance: 0,
       id,
     };
+    console.log(newFriend);
 
     setName("");
     setImage("https://i.pravatar.cc/48");
