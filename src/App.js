@@ -77,3 +77,21 @@ function FormAddFriend() {
     </form>
   );
 }
+
+function FormSplitBill() {
+  return (
+    <form className="form-split-bill">
+      <h2>Split a bill with Clark </h2>
+      <label>Bill value</label>
+      <input type="number" />
+      <label>Your expense</label>
+      <input type="number" />
+      <label>Clarks expense</label> <input type="number" />
+      <label>Who is paying the Bill</label>
+      <select>
+        <option>You</option>
+        <option>Clark</option>
+      </select>
+    </form>
+  );
+}
