@@ -78,10 +78,10 @@ function FreindList({ friends, onSelection, selectedFriend }) {
   );
 }
 
-function Friend({ friend, onSelection, selectedFriend }) {
+function Friend({ friend, selectedFriend, onSelection }) {
   const isSelected = selectedFriend.id === friend.id;
   return (
-    <li>
+    <li className={isSelected ? "selected" : ""}>
       <img src={friend.image} alt={friend.name} />
       <h3>{friend.name}</h3>
       {friend.balance < 0 && (
