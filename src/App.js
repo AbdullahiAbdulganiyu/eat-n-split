@@ -24,6 +24,7 @@ export default function App() {
     <div className="app">
       <div className="sidebar">
         <FreindList />
+        <FormAddFriend />
       </div>
     </div>
   );
@@ -36,7 +37,6 @@ function FreindList() {
       {friends.map((friend) => (
         <Friend friend={friend} key={friend.id} />
       ))}
-      <FormAddFriend />
     </ul>
   );
 }
