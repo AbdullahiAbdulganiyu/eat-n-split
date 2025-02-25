@@ -40,6 +40,9 @@ export default function App() {
     setFriends((friends) => [...friends, friend]);
     setShowAddFriend(false);
   }
+  function handleSelection(friend) {
+    setSelectedFriend(friend);
+  }
   return (
     <div className="app">
       <div className="sidebar">
