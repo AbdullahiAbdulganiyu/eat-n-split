@@ -50,7 +50,8 @@ export default function App() {
           {showAddFriend ? "Close" : "Add Friend"}
         </Button>
       </div>
-      <FormSplitBill />
+
+      {selectedFriend && <FormSplitBill />}
     </div>
   );
 }
