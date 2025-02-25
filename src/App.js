@@ -91,7 +91,12 @@ function FormAddFriend() {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <label>📸Image Url</label> <input type="text" />
+      <label>📸Image Url</label>{" "}
+      <input
+        type="text"
+        value={image}
+        onChange={(e) => setImage(e.target.value)}
+      />
       <Button>Add</Button>
     </form>
   );
