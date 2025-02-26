@@ -45,6 +45,10 @@ export default function App() {
     setSelectedFriend((cur) => (cur?.id === friend.id ? null : friend));
     setShowAddFriend(false);
   }
+
+  function handleSplitBill(value) {
+    console.log(value);
+  }
   return (
     <div className="app">
       <div className="sidebar">
